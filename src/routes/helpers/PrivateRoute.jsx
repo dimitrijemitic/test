@@ -19,7 +19,6 @@ const PrivateRoute = ({ component: Component, ...rest }) => {
             }).catch(error => {
                 setUser(null);
                 history.push('/');
-                console.log(error);
             });
         }
     }, [ isAuth ]);
