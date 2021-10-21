@@ -28,7 +28,7 @@ app.post("/login", (req, res) => {
   }
 });
 
-app.get("/user", (req, rzes) => {
+app.get("/user", (req, res) => {
   try {
     if(req.headers.authorization !== loginResponse.token) {
       res.status(401).json("Wrong auth token");
